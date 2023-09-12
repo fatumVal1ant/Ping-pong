@@ -1,7 +1,7 @@
 #include "game.h"
 
 #include <stdio.h>
-#include <Windows.h>
+// #include <Windows.h>
 
 void game() {
     // Player **players = (Player **)malloc(2 * sizeof(Player *));
@@ -15,7 +15,7 @@ void game() {
         collisionBall(map);
         moveBall(map->ball);
         renderMap(map);
-        Sleep(150);
+        // Sleep(150);
     }
 
     destroyMap(map);
