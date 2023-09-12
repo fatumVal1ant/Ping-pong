@@ -16,10 +16,10 @@ Map *initMap(const int height, const int width, const int sizeRacket) {
 }
 
 void collisionBall(Map *map) {
-    if (map->ball->y + map->ball->dy == 0 || map->ball->y + map->ball->dy == map->height) {
+    if (map->ball->y + map->ball->dy == 0 || map->ball->y + map->ball->dy + 1 == map->height) {
         map->ball->dy *= -1;
     }
-    if (map->ball->x + map->ball->dx == 0 || map->ball->x + map->ball->dx == map->width) {
+    if (map->ball->x + map->ball->dx == 0 || map->ball->x + map->ball->dx + 1 == map->width) {
         map->ball->dx *= -1;
     }
 }
